@@ -1,0 +1,8 @@
+StudentConnect je web aplikacija namijenjena studentima i mladima koji žele donijeti informirane odluke pri odabiru studentskih poslova i stručnih praksi. 
+Primarni korisnici su studenti svih godina studija koji se prvi put susreću s tržištem rada, ali platforma je korisna i za diplomante koji žele podijeliti svoja iskustva i 
+savjete mlađim kolegama. Cilj aplikacije je smanjiti neizvjesnost i nesigurnost prilikom prijave na praksu ili posao pružanjem stvarnih, provjerenih iskustava iz prve ruke.
+Aplikacija omogućuje korisnicima objavljivanje iskustava s praksi i studentskih poslova, uključujući informacije o radnim zadacima, radnom okruženju, mentorstvu, 
+plaći i stečenim vještinama. Iskustva su organizirana po tvrtkama, djelatnostima i pozicijama, a korisnici mogu pretraživati i filtrirati sadržaj prema interesima. 
+Platforma nudi sustav ocjenjivanja i komentiranja koji pomaže u prepoznavanju kvalitetnih poslodavaca i realnih očekivanja. Uz to, korisnici mogu spremati oglase i iskustva, 
+pratiti nove objave te dobivati preporuke na temelju studija i prethodnih pretraživanja. Sve je osmišljeno kao jednostavno, pregledno i dostupno rješenje koje studentima 
+olakšava ulazak u svijet rada i pomaže im u planiranju karijere.

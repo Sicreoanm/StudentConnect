@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Home({ iskustva }) {
+function Home({ iskustva, korisnik, obrisiIskustvo }) {
   const [pretraga, setPretraga] = useState('');
   const [filterOcjena, setFilterOcjena] = useState('');
 
@@ -58,6 +58,14 @@ function Home({ iskustva }) {
                   <span>💰 {iskustvo.placa}</span>
                   <span>📍 {iskustvo.grad}</span>
                 </div>
+                {korisnik && iskustvo.autor === korisnik.email && (
+                  <button
+                    onClick={() => obrisiIskustvo(iskustvo.id)}
+                    className="mt-3 w-full bg-red-50 text-red-500 py-2 rounded-xl hover:bg-red-100 transition text-sm font-medium"
+                  >
+                    🗑️ Obriši iskustvo
+                  </button>
+                )}
               </div>
             ))}
           </div>

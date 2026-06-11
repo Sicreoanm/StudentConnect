@@ -56,6 +56,10 @@ function App() {
     setIskustva([...iskustva, { ...novoIskustvo, id: iskustva.length + 1 }]);
   }
 
+  function obrisiIskustvo(id) {
+  setIskustva(iskustva.filter(i => i.id !== id));
+}
+
   function prijavaKorisnika(k) {
     setKorisnik(k);
     localStorage.setItem('korisnik', JSON.stringify(k));
@@ -70,8 +74,8 @@ function App() {
     <BrowserRouter>
       <Navbar korisnik={korisnik} odjavKorisnika={odjavKorisnika} />
       <Routes>
-        <Route path="/" element={<Home iskustva={iskustva} />} />
-        <Route path="/dodaj" element={<AddExperience dodajIskustvo={dodajIskustvo} />} />
+        <Route path="/" element={<Home iskustva={iskustva} korisnik={korisnik} obrisiIskustvo={obrisiIskustvo} />} />
+        <Route path="/dodaj" element={korisnik ? <AddExperience dodajIskustvo={dodajIskustvo} korisnik={korisnik} /> : <Login prijavaKorisnika={prijavaKorisnika} />} />
         <Route path="/tvrtke" element={<Companies iskustva={iskustva} />} />
         <Route path="/prijava" element={<Login prijavaKorisnika={prijavaKorisnika} />} />
         <Route path="/registracija" element={<Register prijavaKorisnika={prijavaKorisnika} />} />

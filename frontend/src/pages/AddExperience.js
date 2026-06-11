@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function AddExperience({ dodajIskustvo }) {
+function AddExperience({ dodajIskustvo, korisnik }) {
   const navigate = useNavigate();
   const [forma, setForma] = useState({
     tvrtka: '',
@@ -18,9 +18,9 @@ function AddExperience({ dodajIskustvo }) {
 
   function handleSlanje(e) {
     e.preventDefault();
-    dodajIskustvo(forma);
+    dodajIskustvo({ ...forma, autor: korisnik.email });
     navigate('/');
-  }
+}
 
   return (
     <div className="min-h-screen bg-gray-50">
